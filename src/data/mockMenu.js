@@ -1,0 +1,106 @@
+export const mockTenants = [
+  {
+    id: 'TENANT-001',
+    name: 'Tenant Pak Mahmud',
+    tagline: 'Makanan berat dengan harga mahasiswa',
+  },
+  {
+    id: 'TENANT-002',
+    name: 'Warteg Bu Siti',
+    tagline: 'Masakan rumahan khas kampung',
+  },
+  {
+    id: 'TENANT-003',
+    name: 'Kantin Sehat',
+    tagline: 'Menu sehat, salad, dan jus buah',
+  },
+];
+
+export const mockMenu = [
+  {
+    id: 'MENU-001',
+    tenantId: 'TENANT-001',
+    tenantName: 'Tenant Pak Mahmud',
+    name: 'Nasi Goreng Spesial',
+    price: 18000,
+    category: 'Makanan',
+    isAvailable: true,
+  },
+  {
+    id: 'MENU-002',
+    tenantId: 'TENANT-001',
+    tenantName: 'Tenant Pak Mahmud',
+    name: 'Mie Ayam Bakso',
+    price: 16000,
+    category: 'Makanan',
+    isAvailable: true,
+  },
+  {
+    id: 'MENU-003',
+    tenantId: 'TENANT-001',
+    tenantName: 'Tenant Pak Mahmud',
+    name: 'Ayam Penyet',
+    price: 20000,
+    category: 'Makanan',
+    isAvailable: false,
+  },
+  {
+    id: 'MENU-004',
+    tenantId: 'TENANT-002',
+    tenantName: 'Warteg Bu Siti',
+    name: 'Soto Ayam Lamongan',
+    price: 15000,
+    category: 'Makanan',
+    isAvailable: true,
+  },
+  {
+    id: 'MENU-005',
+    tenantId: 'TENANT-002',
+    tenantName: 'Warteg Bu Siti',
+    name: 'Es Teh Manis',
+    price: 5000,
+    category: 'Minuman',
+    isAvailable: true,
+  },
+  {
+    id: 'MENU-006',
+    tenantId: 'TENANT-002',
+    tenantName: 'Warteg Bu Siti',
+    name: 'Kentang Goreng',
+    price: 12000,
+    category: 'Snack',
+    isAvailable: false,
+  },
+  {
+    id: 'MENU-007',
+    tenantId: 'TENANT-003',
+    tenantName: 'Kantin Sehat',
+    name: 'Gado-Gado',
+    price: 14000,
+    category: 'Makanan',
+    isAvailable: true,
+  },
+  {
+    id: 'MENU-008',
+    tenantId: 'TENANT-003',
+    tenantName: 'Kantin Sehat',
+    name: 'Jus Alpukat',
+    price: 15000,
+    category: 'Minuman',
+    isAvailable: true,
+  },
+  {
+    id: 'MENU-009',
+    tenantId: 'TENANT-003',
+    tenantName: 'Kantin Sehat',
+    name: 'Fruit Bowl',
+    price: 13000,
+    category: 'Snack',
+    isAvailable: true,
+  },
+];
+
+export const menuCategories = [
+  'Semua',
+  ...new Set(mockMenu.map((item) => item.category)),
+];
